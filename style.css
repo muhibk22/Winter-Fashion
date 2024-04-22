@@ -1,0 +1,86 @@
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+   
+}
+
+body{
+    font-family: Outfit,Arial, Helvetica, sans-serif;
+}
+
+nav{
+    background: white;
+    height: 85px;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+nav img{
+    width:85px;
+    height: auto;
+    margin-top: 25px;
+    margin-left: 7%;
+}
+
+nav ul{
+    display: flex; 
+    align-items: center;
+    list-style: none;
+    padding-left: 20%;
+    margin-top: 25px;
+    margin-right:10px ;
+}
+
+nav ul li{
+    margin: 0 12px;
+    display: flex;
+    justify-content: space-between;
+}
+nav ul li a {
+    color: black;
+    font-size: 20px;
+    padding: 7px 13px;
+    text-decoration: none; /* Move text-decoration here */
+    display: inline-block;
+    border-radius: 9cap;
+}
+
+.search-form {
+    display: inline-block;
+    margin:25px 7% 0 15px; 
+}
+
+.search-form input[type="text"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.search-form button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #666;
+    color: white;
+    cursor: pointer;
+}
+a:hover {
+    color: white;
+    background-color: black;
+}
+
+.page1 {
+    background-image: 
+        url('background1.jpg');
+    background-size: cover; /* Scale background images to cover the entire container */
+    background-position: center; /* Center the background images */
+    background-repeat: no-repeat; /* Do not repeat background images */
+    height: 800px; /* Adjust the height according to your content */
+}
