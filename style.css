@@ -6,8 +6,10 @@
    
 }
 
+
 body{
-    font-family: Outfit,Arial, Helvetica, sans-serif;
+    font-family: Outfit, Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 
 nav{
@@ -19,6 +21,8 @@ nav{
     justify-content: space-between;
     align-items: center;
     margin-bottom: 25px;
+    min-height: 75px;
+
 }
 
 nav img{
@@ -79,8 +83,98 @@ a:hover {
 .page1 {
     background-image: 
         url('background1.jpg');
-    background-size: cover; /* Scale background images to cover the entire container */
-    background-position: center; /* Center the background images */
-    background-repeat: no-repeat; /* Do not repeat background images */
-    height: 800px; /* Adjust the height according to your content */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    height: 1400px; 
+    position: absolute; 
+    width: 100%; 
+    top: 15px; 
+    left: 0;
+    z-index: -1; 
+}
+
+.box1 h1{
+    font-size: 72px;
+    line-height: 84px;
+    font-weight: 600;
+}
+
+.box1 p{
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.box1{
+    width: 544px;
+    height: 330px;
+    margin-left: 7%;
+    margin-top: 180px;
+}
+
+.container1{
+display: flex;
+}
+
+#img1{
+    width: 512px;
+    height: 510px;
+    margin-top: 135px;
+}
+#img2{
+    width: 112px;
+    height: 32px;
+    margin-left: 200px;
+}
+.imgs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+    margin-left: 150px;
+}
+.shopnow {
+    width: 152px;
+    height: 100px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    clip-path: polygon(50% 29%, 100% 25%, 100% 75%, 50% 71%, 0% 75%, 0% 25%);
+    
+}
+
+.shopnow:hover{
+    color: black;
+    background-color: rgb(152, 144, 144);
+    cursor: pointer;
+}
+
+.inline{
+    display: flex;
+    margin: 0;
+}
+
+#vidIcon{
+    width: 60px;
+    height: 60px;
+}
+
+.vidIcon{
+    margin-top: 25px;
+    margin-left: 15px;
+    display: flex;
+    padding: 0;
+    height: 60px;
+    justify-content: center; 
+    align-items: center;
+}
+
+.vidIcon:hover{
+    cursor: pointer;
 }
