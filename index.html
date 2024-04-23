@@ -9,7 +9,7 @@
     <title>Document</title>
 </head>
 <body>
-    <nav>
+    <div class="nav-bar">
         <img class="logo" src="logo.png" alt="BOF" >
         <ul>
             <li> <a href="#">Home</a></li>
@@ -18,12 +18,13 @@
             <li> <a href="#">Store</a></li>
             <li> <a href="#">Contact Us</a></li>
         </ul>
-        <form class="search-form" action="/search" method="get">
-            <input type="text" placeholder="Search" name="search">
-            <button type="submit">Search</button>
-        </form>
-    </nav>
-
+        <div class="search">
+            <img src="search.png" class="search-icon">
+            <input type="textbox" placeholder="Search" class="textbox">
+            <p>|</p>
+            <button type="submit" class="button"><img src="cart.png" class="cart"></button>
+        </div>
+    </div>
     <div class="page1">
         <div class="container1">
             <div class="box1">
@@ -53,7 +54,42 @@
     </div>
     <div class="page2">
         <div class="container2">
-            <h2>Trendy Collections</h2>
+            <h1>Trendy Collections</h1>
+            <div class="flex">
+
+                <div class="grid">
+                    
+                    <h2>Collection Types</h2>
+                    <ul>
+                        <li>Tops</li>
+                        <li>Coats</li>
+                        <li>Denim</li>
+                        <li>Hoodies</li>
+                        <li>Outwear</li>
+                    </ul>
+                </div>
+                <div class="itemnprice">
+                <div class="jackets">
+                    <img src="p1.png" alt="Denim Jacket" id="jacket">
+                    <img src="p2.png" alt="hoodie" id="jacket">
+                    <img src="p3.png" alt="Long Coat" id="jacket">
+                </div>
+                <div class="price">
+                        <ul>
+                            <li>Denim Walsh Blue Jacket</li>
+                            <li>$175.00</li>
+                        </ul>
+                        <ul>
+                            <li>Orange Hoodie</li>
+                            <li>$90.00</li>
+                        </ul>
+                        <ul>
+                            <li>Brown Woolen Long Coat</li>
+                            <li>$175.00</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
