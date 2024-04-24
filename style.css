@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1385) {
     body {
         background-color: lightgreen;
     }
@@ -108,7 +108,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     height: 805px;
-    width: 100%;
+    width: 100vw;
     left: 0;
     display: block;
     margin-bottom: 1100px;
@@ -289,6 +289,7 @@ body {
 
 
 .item {
+    margin-left: 5px;
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
@@ -339,3 +340,38 @@ body {
     text-align: left;
     margin: 120px 0 50px 10vw;
 }
+
+.frame{
+    display: inline-block;
+    clip-path: polygon(37% 4%, 63% 4%, 100% 0, 100% 100%, 63% 96%, 37% 96%, 0 100%, 0 0);
+}
+
+.frame img{
+    width: 21vw;
+    border-radius: 10px;
+}
+
+.page3 {
+    padding-top: 60px;
+    width: 100vw;
+    left: 0;
+    margin-bottom: 1100px;
+    text-align: center;
+}
+
+.heading{
+font-size: 56px;
+font-weight: 600;
+line-height: 66px;
+margin-top: 80px;
+
+}
+
+.page3 p{
+font-size: 20px;
+font-weight: 400;
+line-height: 33px;
+margin-top: 14px;
+
+}
+
