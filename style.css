@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-@media screen and (max-width: 1385) {
-    body {
-        background-color: lightgreen;
-    }
-}
 
 body {
     font-family: Outfit, Arial, Helvetica, sans-serif;
@@ -102,16 +97,17 @@ body {
     background-color: black;
 }
 
-.page1 {
-    background-image:
-        url('background1.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 805px;
-    width: 100vw;
-    left: 0;
-    display: block;
-    margin-bottom: 1100px;
+
+
+@media screen and (max-width:543px) {
+    .nav-bar ul {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .navbar ul li {
+        margin-top: 3px
+    }
 
 }
 
@@ -130,35 +126,65 @@ body {
 }
 
 .box1 {
-    width: 544px;
-    height: 330px;
+    width: 53vw;
     margin-left: 7%;
     margin-top: 90px;
 }
 
-.container1 {
+.imgs {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 33vw;
+    margin-right: 7vw;
+}
+
+#img1 {
+    width: 33vw;
 }
 
 #img2 {
-    width: 112px;
-    height: 32px;
+    width: 10vw;
 }
 
-.imgs {
+.container1 {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin-left: 150px;
-    width: 50vw;
-    height: auto;
-    margin-top: 70px;
+    margin-top: 100px;
+}
+
+@media screen and (max-width:768px) {
+    .container1 {
+        flex-direction: column;
+    }
+
+    .box1 {
+        width: 100vw;
+        margin: 7vw 0 7vw 0;
+        text-align: center;
+    }
+
+    .imgs {
+        width: 100vw;
+    }
+
+    .collection {
+        flex-direction: column;
+        margin: 0 10vw 0 10vw;
+        padding-top: 20px;
+    }
+
+    .collection img {
+        width: 75vw !important;
+        margin-bottom: 20px;
+    }
 }
 
 .shop-button {
     display: flex;
+    margin-bottom: auto;
+    justify-content: center;
 }
 
 .shopnow {
@@ -197,20 +223,41 @@ body {
     cursor: pointer;
 }
 
+.page1 {
+    background: linear-gradient(184deg, rgba(255, 255, 255, 1) 0%, #F3EFE3 49%);
+    padding-bottom: 40px;
+}
+
+.page2 {
+    padding-top:40px;
+    background-image: linear-gradient(180deg,
+            hsl(45deg 40% 92%) 13%,
+            hsl(45deg 40% 93%) 34%,
+            hsl(45deg 40% 94%) 45%,
+            hsl(45deg 40% 95%) 50%,
+            hsl(45deg 40% 96%) 55%,
+            hsl(44deg 41% 99%) 60%,
+            hsl(44deg 41% 100%) 87%);
+}
+.page3{
+    padding-bottom: 100px;
+}
 .collection {
     display: flex;
-    justify-content: space-around;
-    margin: 70px 14vw 70px 14vw;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 10vw 0 10vw;
+    padding-top: 20px;
 }
 
 .collection img {
-    cursor: pointer;
+    width: 22vw;
 }
 
 .container2 {
     color: black;
     margin-top: 180px;
-    margin-left: 8vw;
+    margin-left: 7vw;
 }
 
 .container2 h1 {
@@ -246,10 +293,13 @@ body {
 .flex {
     display: flex;
     margin-top: 30px;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .block {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
 }
 
 .block ul {
@@ -263,8 +313,11 @@ body {
 .jackets {
     display: flex;
     justify-content: space-between;
-    width: 70vw;
-    margin: 50px 0 200px 100px;
+    margin-right: 7vw;
+}
+
+.jackets img {
+    margin: 0 20px 0 20px;
 }
 
 
@@ -280,6 +333,7 @@ body {
     font-weight: bolder;
     transition: background-color 0.15s, color 0.15s;
     cursor: pointer;
+    margin: 0 10px 0 10px;
 }
 
 .add-button:hover {
@@ -289,11 +343,14 @@ body {
 
 
 .item {
-    margin-left: 5px;
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.item ul {
+    margin-left: 10px;
 }
 
 .column {
@@ -304,54 +361,131 @@ body {
     flex-grow: none;
 }
 
-.page2 {
-    background: rgba(240, 242, 255, 1);
-    min-height: 100vh;
-    display: flex;
-    flex-direction: row;
-}
-
-.page2 img {
-    margin: 120px 0 50px 7vw;
-    width: 35vw;
-    height: auto;
-}
-
-.page2 h1 {
+.frame {
     display: inline-block;
-    font-size: 56px;
-    font-weight: 600;
-    line-height: 66px;
-    margin-bottom: 20px;
+    clip-path: polygon(37% 4%, 63% 4%, 100% 0, 100% 100%, 63% 96%, 37% 96%, 0 100%, 0 0);
+}
+
+.frame img {
+    width: 21vw;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:1085px) {
+    .nav-bar {
+        flex-direction: column;
+    }
+
+    .nav-bar img {
+        margin: 0 0 10px 0;
+    }
+
+    .nav-bar ul {
+        width: 90vw;
+        margin: 0;
+
+    }
+
+    .search {
+        margin: 10px 0 0 0;
+    }
+
+    .search img {
+        margin: 0 3px 0 3px;
+    }
+
+
+    .block ul {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 0px;
+    }
+
+    .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .jackets {
+        flex-direction: column;
+    }
+
+    .column {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .frame img {
+        width: 32vw;
+    }
+
+    .frame {
+        margin-bottom: 20px;
+    }
+
+    .item {
+        width: 40w;
+    }
+
+    .add-button{
+        margin-left: 20px;
+    }
+
+    .page4 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .denim-pic img {
+        width: 60vw !important;
+        margin-bottom: 20px;
+    }
+
+    .denim-pic {
+        width: 60vw !important;
+        ;
+    }
+
+    .text {
+        width: 65vw !important;
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+    }
 
 }
 
-.page2 p {
-    font-size: 20px;
-    font-weight: 400;
-    margin-top: 20px;
+.page4 {
+    background-color: rgba(240, 242, 255, 1);
+    display: flex;
+    padding: 100px 0 100px 0;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.denim-pic {
+    display: inline-block;
+    width: 40vw;
+}
 
 
+.denim-pic img {
+    width: 35vw;
 }
 
 .text {
     display: inline-block;
     width: 35vw;
     text-align: left;
-    margin: 120px 0 50px 10vw;
 }
 
-.frame{
-    display: inline-block;
-    clip-path: polygon(37% 4%, 63% 4%, 100% 0, 100% 100%, 63% 96%, 37% 96%, 0 100%, 0 0);
+.page4 h1{
+    margin-bottom: 20px;
 }
 
-.frame img{
-    width: 21vw;
-    border-radius: 10px;
-}
-
-.page3 {
+.page5 {
     padding-top: 60px;
     width: 100vw;
     left: 0;
@@ -367,11 +501,10 @@ margin-top: 80px;
 
 }
 
-.page3 p{
+.page5 p{
 font-size: 20px;
 font-weight: 400;
 line-height: 33px;
 margin-top: 14px;
 
 }
-
