@@ -659,36 +659,49 @@ margin: 10px 10px 10px 10px;
     .email-img img{
         width: 80vw;
     }
+
+    .logo-column img{
+        width: 75px!important;
+    }
+
+
     
 
 }
 
-.page7{
-    background-color: rgba(248, 242, 237, 1);
-    padding: 100px 0 100px 0;
+.footer{
+    background-color: black;
+    color: white;
+    padding:60px 0 40px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inline-block{
+    display: inline-block;
+}
+
+.logo-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 7vw;
+}
+
+.logo-column img{
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.footer-links{
+    margin-right: 7vw;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-
+    width:60vw;
 }
 
-.page7 h1{
-font-size: 56px;
-font-weight: 600;
-line-height: 66px;
-margin-bottom: 20px;
 
-}
-
-.page7 img{
-    width: 26vw;
-}
-
-.container6{
-    width:86vw;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    text-align: center;
+.footer-links p a{
+    color: white;
+    text-decoration: none;
 }
