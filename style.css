@@ -168,7 +168,15 @@ body {
     .imgs {
         width: 100vw;
     }
-
+   
+    
+    #img1 {
+        width: 80vw;
+    }
+    
+    #img2 {
+        width: 20vw;
+    }
     .collection {
         flex-direction: column;
         margin: 0 10vw 0 10vw;
