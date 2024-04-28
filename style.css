@@ -190,10 +190,6 @@ body {
     .container4 h1{
         font-size: 46px;
     }
-    .add-button{
-        width: 2vw;;
-        text-align: center!important;
-    }
   
     .container2 h1{
         font-size: 40px !important;
@@ -350,6 +346,8 @@ body {
 }
 
 .add-button {
+    text-align: center;
+    width: 2vw;
     padding: 15px;
     clip-path: polygon(0 0, 100% 0, 92% 42%, 92% 60%, 100% 100%, 0 100%, 8% 60%, 8% 42%);
     border: 9px solid black;
@@ -358,6 +356,9 @@ body {
     transition: background-color 0.15s, color 0.15s;
     cursor: pointer;
     margin: 0 10px 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .add-button:hover {
